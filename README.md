@@ -10,7 +10,13 @@ This repository contains a basic Laravel 12 application configured for Docker.
 docker-compose build
 ```
 
-2. Start the application:
+2. Install PHP dependencies:
+
+```bash
+docker-compose run --rm composer install
+```
+
+3. Start the application:
 
 ```bash
 docker-compose up -d
