@@ -13,4 +13,4 @@ RUN composer install --no-interaction --prefer-dist \
     && npm install \
     && npm run build
 
-CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8000"]
+CMD ["php-fpm"]
